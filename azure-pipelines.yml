@@ -1,0 +1,6 @@
+- task: PowerShell@2
+  inputs:
+    azureSubscription: ES-LOB-ServicesDevOpsTest1-UAT-svcdoengg
+    targetType: 'inline'
+    script: 'Set-AzSqlServerActiveDirectoryAdministrator -ResourceGroupName "RG-Dev-EIMetrics" -ServerName "eimetricsdevserver" -DisplayName "Services DevOps EI & WITAL Team" -ObjectId "4b6132d8-dee0-4742-b472-9d84a60dad6c"'
+    azurePowerShellVersion: latestVersion
